@@ -1,0 +1,14 @@
+PODS:
+  - SUImageComparisonView (0.1.0)
+
+DEPENDENCIES:
+  - SUImageComparisonView (from `../`)
+
+EXTERNAL SOURCES:
+  SUImageComparisonView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SUImageComparisonView: 6264e1268ceeda779716a40c6b7f40327fca5f62
+
+COCOAPODS: 0.38.2

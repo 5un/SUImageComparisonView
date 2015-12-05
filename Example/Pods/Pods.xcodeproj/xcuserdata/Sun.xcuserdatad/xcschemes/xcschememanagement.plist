@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-SUImageComparisonView_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SUImageComparisonView_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SUImageComparisonView-SUImageComparisonView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SUImageComparisonView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5E5B4392287FAD823F2FB4F3B0875332</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8296A05202B730CF71AE9989553CDAFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83E5A89AE570C571742A51885D5E6232</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0415AB7D0AE66D28D3C09C897134D70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

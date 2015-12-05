@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SUImageComparisonView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="After" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7I-QC-nBU">
+                                <rect key="frame" x="303" y="48" width="297" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Before" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-Z2-JjN">
+                                <rect key="frame" x="0.0" y="48" width="297" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apq-vT-LD0" customClass="SUImageComparisonView" customModule="Pods_SUImageComparisonView_Example">
+                                <rect key="frame" x="0.0" y="140" width="600" height="394"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="apq-vT-LD0" secondAttribute="height" multiplier="4:3" id="Es7-TN-kW5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="primaryImage" value="boy_before"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="secondaryImage" value="boy_after"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightTintColor">
+                                        <color key="value" red="1" green="0.78384857060000002" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startOffsetPercent">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftDefaultPosition">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightDefaultPosition">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a7I-QC-nBU" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0AR-UU-kNS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a7I-QC-nBU" secondAttribute="trailing" constant="-20" id="7y4-RA-bmV"/>
+                            <constraint firstItem="apq-vT-LD0" firstAttribute="top" secondItem="a7I-QC-nBU" secondAttribute="bottom" constant="30" id="MKt-aJ-T0k"/>
+                            <constraint firstItem="a7I-QC-nBU" firstAttribute="leading" secondItem="TWc-Z2-JjN" secondAttribute="trailing" constant="6" id="N0Y-Cv-Q4r"/>
+                            <constraint firstItem="TWc-Z2-JjN" firstAttribute="top" secondItem="a7I-QC-nBU" secondAttribute="top" id="TGf-WD-NWw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="apq-vT-LD0" secondAttribute="trailing" constant="-20" id="hYf-nf-OEV"/>
+                            <constraint firstItem="a7I-QC-nBU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="ncX-SS-Ru0"/>
+                            <constraint firstItem="apq-vT-LD0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="wDc-IZ-1iU"/>
+                            <constraint firstItem="TWc-Z2-JjN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="yY9-x9-47d"/>
+                            <constraint firstItem="TWc-Z2-JjN" firstAttribute="width" secondItem="a7I-QC-nBU" secondAttribute="width" id="zoP-G6-lRJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0AR-UU-kNS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boy_after" width="455" height="606"/>
+        <image name="boy_before" width="455" height="606"/>
+    </resources>
+</document>
