@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SUImageComparisonView"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "An iOS View that let you swipe to reveal portions of two images like http://imgur.com/eyxNQM9"
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     Configurable left and right image tint."
 
   s.homepage         = "https://github.com/5un/SUImageComparisonView"
-  # s.screenshots     = "http://imgur.com/eyxNQM9"
+  s.screenshots     = "http://i.imgur.com/eyxNQM9.gif?1"
   s.license          = 'MIT'
   s.author           = { "Soravis Prakkamakul" => "asunnotthesun@gmail.com" }
   s.source           = { :git => "https://github.com/5un/SUImageComparisonView.git", :tag => s.version.to_s }
