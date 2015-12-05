@@ -9,15 +9,19 @@
 Pod::Spec.new do |s|
   s.name             = "SUImageComparisonView"
   s.version          = "0.1.0"
-  s.summary          = ""
+  s.summary          = "An iOS View that let you swipe to reveal portions of two images like http://imgur.com/eyxNQM9"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "An iOS View that let you swipe to reveal portions of two images like http://imgur.com/eyxNQM9 
+  Features
+    Support 2 UIImages
+    The view contentMode property will be applied to the internal UIImageViews.
+    Configurable initial slider position. Snappable left and right slider position (In case you want to slightly reveal the other image). 
+    Configurable left and right image tint."
 
   s.homepage         = "https://github.com/5un/SUImageComparisonView"
   # s.screenshots     = "http://imgur.com/eyxNQM9"
